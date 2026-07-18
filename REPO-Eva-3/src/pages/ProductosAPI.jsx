@@ -10,7 +10,7 @@ function ProductosAPI() {
     const obtenerProductos = async () => {
       try {
         setCargando(true);
-        const response = await fetch('http://127.0.0.1:8000/api/productos');
+        const response = await fetch('/api/productos');
         
         if (!response.ok) {
           throw new Error(`Error ${response.status}: ${response.statusText}`);
