@@ -10,7 +10,8 @@ function ProductosAPI() {
     const obtenerProductos = async () => {
       try {
         setCargando(true);
-        const response = await fetch('https://psychic-invention-x54qgww5q449f9x5v-8000.app.github.dev/api/productos');
+        // AHORA USA /api EN LUGAR DE LA URL COMPLETA
+        const response = await fetch('/api/productos');
         
         if (!response.ok) {
           throw new Error(`Error ${response.status}: ${response.statusText}`);
