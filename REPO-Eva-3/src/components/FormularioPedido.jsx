@@ -11,7 +11,6 @@ function FormularioPedido({ onGuardar, pedidoEditando, onCancelar }) {
 
   const [errores, setErrores] = useState({});
 
-  // Si hay un pedido para editar, cargar sus datos
   useEffect(() => {
     if (pedidoEditando) {
       setFormData({
@@ -24,14 +23,12 @@ function FormularioPedido({ onGuardar, pedidoEditando, onCancelar }) {
     }
   }, [pedidoEditando]);
 
-  // Manejar cambios en los inputs
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value
     });
-    // Limpiar error del campo cuando el usuario escribe
     if (errores[name]) {
       setErrores({
         ...errores,
@@ -40,7 +37,6 @@ function FormularioPedido({ onGuardar, pedidoEditando, onCancelar }) {
     }
   };
 
-  // Validar formulario
   const validar = () => {
     const nuevosErrores = {};
     
@@ -64,13 +60,11 @@ function FormularioPedido({ onGuardar, pedidoEditando, onCancelar }) {
     return Object.keys(nuevosErrores).length === 0;
   };
 
-  // Manejar envío del formulario
   const handleSubmit = (e) => {
     e.preventDefault();
     
     if (validar()) {
       onGuardar(formData);
-      // Limpiar formulario si no es edición
       if (!pedidoEditando) {
         setFormData({
           cliente: '',

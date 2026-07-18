@@ -26,7 +26,7 @@ function TarjetaProducto({ producto }) {
         {producto.descripcion}
       </p>
       <p style={{ fontSize: '14px', marginBottom: '5px' }}>
-        <strong>Categoría:</strong> {producto.categoria}
+        <strong>Categoria:</strong> {producto.categoria}
       </p>
       <p style={{ fontSize: '18px', fontWeight: 'bold', color: '#2c3e50', marginBottom: '8px' }}>
         ${producto.precio.toLocaleString()}
@@ -39,7 +39,7 @@ function TarjetaProducto({ producto }) {
           color: 'white',
           fontSize: '12px'
         }}>
-          {producto.disponible ? '✅ Disponible' : '❌ No disponible'}
+          {producto.disponible ? 'Disponible' : 'No disponible'}
         </span>
       </p>
     </div>

@@ -42,14 +42,14 @@ function ListaPedidos({ pedidos, onEditar, onEliminar }) {
                   onClick={() => onEditar(pedido)}
                   style={{ marginRight: '5px', padding: '5px 10px', fontSize: '12px' }}
                 >
-                  ✏️
+                  Editar
                 </button>
                 <button 
                   className="btn btn-danger" 
                   onClick={() => onEliminar(pedido.id)}
                   style={{ padding: '5px 10px', fontSize: '12px' }}
                 >
-                  🗑️
+                  Eliminar
                 </button>
               </td>
             </tr>

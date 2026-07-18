@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <div className="nav-logo">
-          🐾 Tienda Mascotas
+          Tienda Mascotas
         </div>
         <ul className="nav-links">
           <li>
@@ -16,7 +16,7 @@ function Navbar() {
           </li>
           <li>
             <NavLink to="/gestion" className={({ isActive }) => isActive ? 'active' : ''}>
-              Gestión de Pedidos
+              Gestion de Pedidos
             </NavLink>
           </li>
           <li>

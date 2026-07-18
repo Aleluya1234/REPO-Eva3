@@ -1,15 +1,15 @@
-# Tienda de Mascotas - Evaluación 3
+# Tienda de Mascotas - Evaluacion 3
 
-**Alumno:** Benjamín Elías Nahuelhuaique Chacón  
-**Sección:** C1  
+**Alumno:** Benjamin Elias Nahuelhuaique Chacon  
+**Seccion:** C1  
 **Tema:** Tema 28 - Tienda de mascotas  
 
-## 📝 Descripción
+## Descripcion
 
-Aplicación SPA en React para gestionar pedidos de una tienda de mascotas.  
+Aplicacion SPA en React para gestionar pedidos de una tienda de mascotas.  
 Los pedidos se guardan en LocalStorage y sobreviven al F5.
 
-## 🚀 Cómo ejecutar
+## Como ejecutar
 
 ### 1. Ejecutar la API (FastAPI)
 

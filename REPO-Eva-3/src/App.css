@@ -32,7 +32,6 @@ footer {
   margin-top: 20px;
 }
 
-/* Estilos para las tarjetas */
 .card {
   background: white;
   border-radius: 8px;
@@ -41,7 +40,6 @@ footer {
   margin-bottom: 15px;
 }
 
-/* Estilos para el formulario */
 .form-group {
   margin-bottom: 15px;
 }

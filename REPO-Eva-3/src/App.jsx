@@ -18,7 +18,7 @@ function App() {
           </Routes>
         </main>
         <footer>
-          <p>© 2026 Tienda de Mascotas - Benjamín Nahuelhuaique</p>
+          <p>© 2026 Tienda de Mascotas - Benjamin Nahuelhuaique</p>
         </footer>
       </div>
     </BrowserRouter>

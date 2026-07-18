@@ -10,7 +10,6 @@ function ProductosAPI() {
     const obtenerProductos = async () => {
       try {
         setCargando(true);
-        // AHORA USA /api EN LUGAR DE LA URL COMPLETA
         const response = await fetch('/api/productos');
         
         if (!response.ok) {
@@ -33,22 +32,22 @@ function ProductosAPI() {
 
   return (
     <div>
-      <h2>🛒 Catálogo de Productos</h2>
+      <h2>Catalogo de Productos</h2>
       <p style={{ color: '#666', marginBottom: '20px' }}>
         Productos obtenidos desde la API del profesor
       </p>
 
       {cargando && (
         <div className="card" style={{ textAlign: 'center' }}>
-          <p>⏳ Cargando productos...</p>
+          <p>Cargando productos...</p>
         </div>
       )}
 
       {error && (
         <div className="card" style={{ background: '#fde8e8', border: '1px solid #e74c3c' }}>
-          <p style={{ color: '#e74c3c' }}>❌ Error al obtener datos: {error}</p>
+          <p style={{ color: '#e74c3c' }}>Error al obtener datos: {error}</p>
           <p style={{ fontSize: '14px', color: '#666' }}>
-            Asegúrate que la API esté corriendo en http://127.0.0.1:8000
+            Asegurate que la API este corriendo en http://127.0.0.1:8000
           </p>
         </div>
       )}
