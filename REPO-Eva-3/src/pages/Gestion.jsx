@@ -1,21 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import useLocalStorage from '../hooks/useLocalStorage';
 import FormularioPedido from '../components/FormularioPedido';
 import ListaPedidos from '../components/ListaPedidos';
 
 function Gestion() {
-  const [pedidos, setPedidos] = useState([]);
+  const [pedidos, setPedidos] = useLocalStorage('pedidos', []);
   const [pedidoEditando, setPedidoEditando] = useState(null);
-
-  useEffect(() => {
-    const pedidosGuardados = localStorage.getItem('pedidos');
-    if (pedidosGuardados) {
-      setPedidos(JSON.parse(pedidosGuardados));
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('pedidos', JSON.stringify(pedidos));
-  }, [pedidos]);
 
   const agregarPedido = (nuevoPedido) => {
     const pedidoConId = {
