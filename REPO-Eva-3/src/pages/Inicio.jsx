@@ -4,7 +4,10 @@ function Inicio() {
       <h1 style={{ fontSize: '2.5rem', marginBottom: '10px' }}>
         Bienvenido a Tienda Mascotas
       </h1>
-      <p style={{ fontSize: '1.2rem', color: '#555', marginBottom: '30px' }}>
+      <p style={{ fontSize: '1.2rem', color: '#555', marginBottom: '5px' }}>
+        Cuidado y bienestar para tu mejor amigo
+      </p>
+      <p style={{ fontSize: '1rem', color: '#777', marginBottom: '30px' }}>
         Tu plataforma confiable para gestionar pedidos de productos para mascotas.
       </p>
 
@@ -22,7 +25,7 @@ function Inicio() {
           width: '200px',
           boxShadow: '0 2px 6px rgba(0,0,0,0.08)'
         }}>
-          <h3 style={{ margin: '0 0 8px 0' }}>📦 Pedidos</h3>
+          <h3 style={{ margin: '0 0 8px 0' }}>Pedidos</h3>
           <p style={{ margin: 0, fontSize: '0.95rem', color: '#333' }}>
             Registra, edita y elimina pedidos fácilmente.
           </p>
@@ -35,7 +38,7 @@ function Inicio() {
           width: '200px',
           boxShadow: '0 2px 6px rgba(0,0,0,0.08)'
         }}>
-          <h3 style={{ margin: '0 0 8px 0' }}>🐾 Productos</h3>
+          <h3 style={{ margin: '0 0 8px 0' }}>Productos</h3>
           <p style={{ margin: 0, fontSize: '0.95rem', color: '#333' }}>
             Consulta el catálogo desde nuestra API externa.
           </p>
@@ -48,7 +51,7 @@ function Inicio() {
           width: '200px',
           boxShadow: '0 2px 6px rgba(0,0,0,0.08)'
         }}>
-          <h3 style={{ margin: '0 0 8px 0' }}>💾 Persistencia</h3>
+          <h3 style={{ margin: '0 0 8px 0' }}>Persistencia</h3>
           <p style={{ margin: 0, fontSize: '0.95rem', color: '#333' }}>
             Tus pedidos se guardan automáticamente en el navegador.
           </p>
@@ -63,13 +66,13 @@ function Inicio() {
         border: '1px solid #e0e0e0'
       }}>
         <p style={{ margin: '5px 0' }}>
-          <strong>👨‍🎓 Alumno:</strong> Benjamin Elias Nahuelhuaique Chacon
+          <strong>Alumno:</strong> Benjamin Elias Nahuelhuaique Chacon
         </p>
         <p style={{ margin: '5px 0' }}>
-          <strong>📚 Sección:</strong> C1
+          <strong>Seccion:</strong> C1
         </p>
         <p style={{ margin: '5px 0' }}>
-          <strong>📝 Tema:</strong> Tienda de mascotas
+          <strong>Tema:</strong> Tienda de mascotas
         </p>
       </div>
     </div>
